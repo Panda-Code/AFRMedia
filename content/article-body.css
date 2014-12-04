@@ -15,19 +15,23 @@ body.category-attraksjoner {
   background-color:hsla(282, 96%, 61%, 0.3);
 }
 
-.post {
+/* Serverdigheter article body */
+.postid-345, .postid-241, .postid-182, .postid-105, .postid-89  {
   background-color:hsla(142, 42%, 67%, 0.3);
 }
 
-.post {
+/* Kultur article body */
+.postid-199, .postid-205, .postid-198, .postid-173, .postid-159  {
   background-color:hsla(34, 100%, 50%, 0.3);
 }
 
-.post {
+/* Shopping article body */
+.postid-208, .postid-188, .postid-179, .postid-196, .postid-186  {
   background-color:hsla(0, 100%, 72%, 0.3);
 }
 
-.post {
+/* Attraksjoner article body */
+.postid-304, .postid-211, .postid-213, .postid-175, .postid-104, .postid-15  {
   background-color:hsla(282, 96%, 61%, 0.3);
 }
 
