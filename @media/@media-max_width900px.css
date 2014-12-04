@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 500px) {
   .site-head {
     padding: 0 0;
   }
@@ -9,5 +9,86 @@
     background-image: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/final.png);
     background-size: cover;
     background-position: 50% 64%;
+  }
+  .hexagon {
+	   margin: 0 auto;
+   -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+   background:black;
+   overflow:hidden;
+   display:inline-block;
+  }
+  .hexagon-spacing-fix:nth-child(odd) {
+   list-style-type:none;
+   margin: 0px; 
+   padding: 0px;
+   display:block;
+  }
+  
+  .hexagon-spacing-fix:nth-child(even) {
+   list-style-type:none;
+   padding-left: 0px;
+   margin-top: 0px;
+   display:block;
+  }
+  .hexagon-spacing-fix li:nth-child(even) {
+	  padding-left: 0px;
+	  padding-right: 0px;
+  }
+  
+  .hex-last-even li:nth-child(even) {
+	  padding-left: 0px; 
+  }
+  
+    .hex-last-element li:last-child {
+    margin-right: 0px;
+  }
+  
+  .hexagon-spacing-fix:nth-child(3) {
+    margin-top: 0px;
+  }
+  .hexagon-spacing-fix:nth-child(5) {
+    margin-top: 0px;
+  }
+  .hexagon-spacing-fix:nth-child(7) {
+    margin-top: 0px;
+  }
+  
+  
+  
+  .hexagon-image-class {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0em !important;
+    max-width: 100% !important;
+    width:100%;
+    background-color: hsla(142, 42%, 67%, 1.0);
+  }
+
+
+  /*  Fixing the size, so the hexagons doesn't get all messed up and cluttered  */
+  .post-61 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
+  /*  If we want to have text in the picture, hover effect currently NOT working  */
+
+  .hexa-text-box {
+    margin-top: -143px;
+    margin-left: 19px;
+    width: 100%;
+    height: 100%;
+    color: #000DFF;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+  }
+  .hexa-text {
+    border-bottom: thin solid #000DFF;
+  }
+  .hexa-text-info {
+    font-size: 14px;
+  }
+ ul {
+    margin:0 0 0em 0em
   }
 }
