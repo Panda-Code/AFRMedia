@@ -1,3 +1,49 @@
-.ccs {
-  content:"";
-  }
+/* Background for the different categories */
+body.category-severdigheter {
+  background-color:hsla(142, 42%, 67%, 0.3);
+}
+
+body.category-kultur {
+  background-color:hsla(34, 100%, 50%, 0.3);
+}
+
+body.category-shopping {
+  background-color:hsla(0, 100%, 72%, 0.3);
+}
+
+body.category-attraksjoner {
+  background-color:hsla(282, 96%, 61%, 0.3);
+}
+
+.post {
+  background-color:hsla(142, 42%, 67%, 0.3);
+}
+
+.post {
+  background-color:hsla(34, 100%, 50%, 0.3);
+}
+
+.post {
+  background-color:hsla(0, 100%, 72%, 0.3);
+}
+
+.post {
+  background-color:hsla(282, 96%, 61%, 0.3);
+}
+
+/*White content box for categories and articles*/
+.category #content {
+  width:1000px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+}
+
+.single-post #content {
+  width:1000px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+}
