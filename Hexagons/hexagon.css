@@ -107,6 +107,8 @@
 .hexa-text-info {
   font-size: 14px;
   max-width: 200px !important;
+  max-height: 50px;
+  overflow: scroll;
   word-wrap: break-word;
 }
 
