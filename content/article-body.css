@@ -1,3 +1,8 @@
+/* Removing margin between header picture and content */
+.site-head {
+  margin-bottom:0;
+}
+
 /* Background for the different categories */
 body.category-severdigheter {
   background-color:hsla(142, 42%, 67%, 0.3);
