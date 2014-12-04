@@ -99,11 +99,14 @@
   color: #000DFF;
   font-size: x-large;
   font-family: 'Lato', sans-serif;
+  visibility: hidden;
 }
 .hexa-text {
   border-bottom: thin solid #000DFF;
 }
 .hexa-text-info {
   font-size: 14px;
+  max-width: 200px !important;
+  word-wrap: break-word;
 }
 
