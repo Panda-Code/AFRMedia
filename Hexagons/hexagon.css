@@ -112,3 +112,22 @@
   word-wrap: break-word;
 }
 
+
+
+/*  Hover effect on images  */
+img.hexagon-image-class:hover {
+  opacity: 0.4
+}
+
+.kultur {
+  background-color: hsla(34, 100%, 50%, 1.0);
+}
+.severdigheter {
+  background-color: hsla(142, 42%, 67%, 1.0);
+}
+.shopping {
+  background-color: hsla(0, 100%, 72%, 1.0);
+}
+.attraksjoner {
+  background-color: hsla(282, 96%, 61%, 1.0);
+}

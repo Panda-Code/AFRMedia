@@ -60,11 +60,36 @@ h6, b {
   margin-bottom: 0px;
 }
 
+/*  Actuall Header  */
+
+.site-header {
+  background-image: url(#);
+  background-size: cover;
+  background-position: 50% 64%;
+  height: 65px;
+}
 
 
+/*  Current position for the logo  */
+.social-icons {
+  padding-top: 4rem;
+}
+/*  Allowing us to put it in inside the page without actually changing any of the HTML/PHP  */
+/*
+.social-icons:before {
+  content: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/HexaLogo1-300x300.png);
+}
+*/
 
+/*  Removing the title of the "blog", we don't need it, since we have the logo  */
+.blog-title {
+  display: none;
+}
 
-
+/*  Moving the text "En reise gjennom København" under the logo  */
+.blog-description {
+  margin-top: -50px;
+}
 
 /*  Setting the bar to the top / high z-index but not too high / color: black/transparent  */
 
@@ -142,9 +167,11 @@ h6, b {
 
 
 /*  If we want the logo on the left side of our nav-bar  */
+/*
 .main-navigation:before {
   content: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/HexaLogo1-150x150.png);
 }
+*/
 /*  Fixes its position 
 .main-navigation {
   display: -webkit-box;
@@ -156,54 +183,100 @@ h6, b {
   border-radius: 100%;
 }
 
-
-
-
-
-
-
-/*  Actuall Header  */
-
-.site-header {
-  background-image: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/final.png);
-  background-size: cover;
-  background-position: 50% 64%;
+/*  Image Fix  */
+.wp-caption {
+  border: none;
+}
+.wp-caption .wp-caption-text {
+  margin: 0 0;
+}
+.wp-caption-text {
+  text-align: left;
+  margin-top: -2rem !important;
+  margin-top: -0.7rem !important;
+  margin-left: 20px !important;
+  color: grey;
 }
 
 
-/*  Current position for the logo  */
-.social-icons {
-  padding-top: 4rem;
-}
-/*  Allowing us to put it in inside the page without actually changing any of the HTML/PHP  */
-.social-icons:before {
-  content: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/HexaLogo1-300x300.png);
+/*  Removing the general byline at the top of the articles  */
+.byline {
+  display: none !important;
 }
 
-/*  Removing the title of the "blog", we don't need it, since we have the logo  */
-.blog-title {
+
+
+/*                     MainPage                  */
+
+/*  Removing the link on the start page  */
+.post-61 .post-header .post-title a {
   display: none;
 }
 
-/*  Moving the text "En reise gjennom København" under the logo  */
-.blog-description {
-  margin-top: -50px;
-}
-
-
-
-
-/* Remove from main page:  */
-
-/*
-.page-id-61 .site-header {
+/*  If we want to have comments available, but just not on the front page.  */
+.page-id-61 .comments-area {
   display: none;
 }
-*/
 
+/* Removing margin between header picture and content */
+.site-head {
+  margin-bottom:0;
+}
 
+/* Background for the different categories */
+body.category-severdigheter {
+  background-color:hsla(142, 42%, 67%, 0.3);
+}
 
+body.category-kultur {
+  background-color:hsla(34, 100%, 50%, 0.3);
+}
 
+body.category-shopping {
+  background-color:hsla(0, 100%, 72%, 0.3);
+}
+
+body.category-attraksjoner {
+  background-color:hsla(282, 96%, 61%, 0.3);
+}
+
+/* Serverdigheter article body */
+.postid-345, .postid-241, .postid-182, .postid-105, .postid-89  {
+  background-color:hsla(142, 42%, 67%, 0.3);
+}
+
+/* Kultur article body */
+.postid-199, .postid-205, .postid-198, .postid-173, .postid-159  {
+  background-color:hsla(34, 100%, 50%, 0.3);
+}
+
+/* Shopping article body */
+.postid-208, .postid-188, .postid-179, .postid-196, .postid-186  {
+  background-color:hsla(0, 100%, 72%, 0.3);
+}
+
+/* Attraksjoner article body */
+.postid-304, .postid-211, .postid-213, .postid-175, .postid-104, .postid-15  {
+  background-color:hsla(282, 96%, 61%, 0.3);
+}
+
+/*White content box for categories and articles*/
+.category #content {
+  width:1000px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+}
+
+.single-post #content {
+  width:1000px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+  padding-top:10px;
+}
 
 
 
@@ -224,6 +297,17 @@ h6, b {
   overflow:hidden;
   display:inline-block;
 }
+
+.hexagon-small {
+  margin: 0 auto;
+  width:80px;
+  height: 70px;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background:black;
+  overflow:hidden;
+  display:inline-block;
+}
+
 
 
 /*  Hexagon List space fix  */
@@ -296,93 +380,227 @@ h6, b {
   color: #000DFF;
   font-size: x-large;
   font-family: 'Lato', sans-serif;
+  visibility: hidden;
 }
 .hexa-text {
   border-bottom: thin solid #000DFF;
 }
 .hexa-text-info {
   font-size: 14px;
+  max-width: 200px !important;
+  max-height: 50px;
+  overflow: scroll;
+  word-wrap: break-word;
 }
 
+@media only screen and (max-width: 650px) {
+  .site-head {
+    padding: 0 0;
+  }
+  .menu-toggle {
+    display:block;
+  }
+  .main-navigation ul {
+    background-color: rgba(0,0,0,1);
+    display:none;
+  }
+
+  .menu-hovedmeny-container {
+    height: 32px;
+  }
+
+  .site-header {
+    background-image: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/final.png);
+    background-size: cover;
+    background-position: 50% 64%;
+  }
+  .hexagon {
+   margin: -7px auto auto auto;
+   -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+   background:black;
+   overflow:hidden;
+   display:inline-block;
+   width:100%;
+   height: 200px;
+  }
+  .hexagon-spacing-fix:nth-child(odd) {
+   list-style-type:none;
+   margin: 0px; 
+   padding: 0px;
+   display:block;
+  }
+  
+  .hexagon-spacing-fix:nth-child(even) {
+   list-style-type:none;
+   padding-left: 0px;
+   margin-top: 0px;
+   display:block;
+  }
+  .hexagon-spacing-fix li:nth-child(even) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .hex-last-even li:nth-child(even) {
+    padding-left: 0px; 
+  }
+  
+    .hex-last-element li:last-child {
+    margin-right: 0px;
+  }
+  
+  .hexagon-spacing-fix:nth-child(3) {
+    margin-top: 0px;
+  }
+  .hexagon-spacing-fix:nth-child(5) {
+    margin-top: 0px;
+  }
+  .hexagon-spacing-fix:nth-child(7) {
+    margin-top: 0px;
+  }
+  
+  
+  
+  .hexagon-image-class {
+    margin: -100px 0px 0px 0px !important;
+    padding: 0em !important;
+    max-width: 100% !important;
+    width:100%;
+    background-color: hsla(142, 42%, 67%, 1.0);
+  }
 
 
+  /*  Fixing the size, so the hexagons doesn't get all messed up and cluttered  */
+  .post-61 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
-/*  Image Fix  */
-.wp-caption {
-  border: none;
+
+  /*  If we want to have text in the picture, hover effect currently NOT working  */
+
+  .hexa-text-box {
+    margin-top: -143px;
+    margin-left: 19px;
+    width: 100%;
+    height: 100%;
+    color: #000DFF;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+  }
+  .hexa-text {
+    border-bottom: thin solid #000DFF;
+  }
+  .hexa-text-info {
+    font-size: 14px;
+  }
+ ul {
+    margin:0 0 0em 0em
+  }
 }
-.wp-caption .wp-caption-text {
-  margin: 0 0;
-}
-.wp-caption-text {
-  text-align: left;
-  margin-top: -2rem !important;
-  margin-top: -0.7rem !important;
-  margin-left: 20px !important;
-  color: grey;
-}
+
+@media only screen and (max-width: 650px) {
+  .site-head {
+    padding: 0 0;
+  }
+  .menu-toggle {
+    display:block;
+  }
+  .main-navigation ul {
+    background-color: rgba(0,0,0,1);
+    display:none;
+  }
+
+  .menu-hovedmeny-container {
+    height: 32px;
+  }
+
+  .site-header {
+    background-image: url(http://afrmedia.vangenplotz.no/wp-content/uploads/2014/11/final.png);
+    background-size: cover;
+    background-position: 50% 64%;
+  }
+  .hexagon {
+   margin: -7px auto auto auto;
+   -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+   background:black;
+   overflow:hidden;
+   display:inline-block;
+   width:100%;
+   height: 200px;
+  }
+  .hexagon-spacing-fix:nth-child(odd) {
+   list-style-type:none;
+   margin: 0px; 
+   padding: 0px;
+   display:block;
+  }
+  
+  .hexagon-spacing-fix:nth-child(even) {
+   list-style-type:none;
+   padding-left: 0px;
+   margin-top: 0px;
+   display:block;
+  }
+  .hexagon-spacing-fix li:nth-child(even) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .hex-last-even li:nth-child(even) {
+    padding-left: 0px; 
+  }
+  
+    .hex-last-element li:last-child {
+    margin-right: 0px;
+  }
+  
+  .hexagon-spacing-fix:nth-child(3) {
+    margin-top: 0px;
+  }
+  .hexagon-spacing-fix:nth-child(5) {
+    margin-top: 0px;
+  }
+  .hexagon-spacing-fix:nth-child(7) {
+    margin-top: 0px;
+  }
+  
+  
+  
+  .hexagon-image-class {
+    margin: -100px 0px 0px 0px !important;
+    padding: 0em !important;
+    max-width: 100% !important;
+    width:100%;
+    background-color: hsla(142, 42%, 67%, 1.0);
+  }
 
 
-/*  Removing the general byline at the top of the articles  */
-.byline {
-  display: none !important;
-}
+  /*  Fixing the size, so the hexagons doesn't get all messed up and cluttered  */
+  .post-61 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
 
+  /*  If we want to have text in the picture, hover effect currently NOT working  */
 
-/*                     MainPage                  */
-
-/*  Removing the link on the start page  */
-.post-61 .post-header .post-title a {
-  display: none;
-}
-
-/*  If we want to have comments available, but just not on the front page.  */
-.page-id-61 .comments-area {
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-
-/*  No idea of what this does!  */
-
-.comment-metadata {
-  text-align: right;
-  margin-top: -27px;
-}
-.comment-metadata a {
-  color: hsla(0, 10%, 80%, 1.0);
-  text-decoration: none;
-}
-.comment-metadata a:hover {
-  color: hsla(0, 0%, 0%, 1.0);
-}
-
-
-/*  Comments area. Text size fix  */
-.comments-title {
-  font-size: 2rem;
-}
-.comment-reply-title {
-  font-size:2rem;
-  margin-bottom: 0px;
-}
-/*  Comments Area. From fix  */
-.logged-in-as {
-  margin-top: 0.1rem;
-  margin-left: 3rem;
-  color: hsla(0, 10%, 80%, 1.0);
-}
-.logged-in-as a {
-  color: hsla(0, 10%, 80%, 1.0);
-}
-.logged-in-as a:hover {
-  color: hsla(0, 0%, 0%, 1.0);
+  .hexa-text-box {
+    margin-top: -143px;
+    margin-left: 19px;
+    width: 100%;
+    height: 100%;
+    color: #000DFF;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+  }
+  .hexa-text {
+    border-bottom: thin solid #000DFF;
+  }
+  .hexa-text-info {
+    font-size: 14px;
+  }
+ ul {
+    margin:0 0 0em 0em
+  }
 }
