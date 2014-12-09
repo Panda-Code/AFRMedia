@@ -59,3 +59,39 @@ body.category-attraksjoner {
   padding-top:10px;
   box-shadow: 0 0 10px 0.5px;
 }
+
+.category-severdigheter .hentry {
+  border-bottom: hsla(142, 42%, 67%, 1.0) 2px solid;
+}
+
+.category-severdigheter .hentry:after {
+  border: hsla(142, 42%, 67%, 1.0) 2px solid;
+  bottom:-6px;
+}
+
+.category-kultur .hentry {
+  border-bottom: hsla(34, 100%, 50%, 1.0) 2px solid;
+}
+
+.category-kultur .hentry:after {
+  border: hsla(34, 100%, 50%, 1.0) 2px solid;
+  bottom:-6px;
+}
+
+.category-shopping .hentry {
+  border-bottom: hsla(0, 100%, 72%, 1.0) 2px solid;
+}
+
+.category-shopping .hentry:after {
+  border: hsla(0, 100%, 72%, 1.0) 2px solid;
+  bottom:-6px;
+}
+
+.category-attraksjoner .hentry {
+  border-bottom: hsla(282, 96%, 61%, 1.0) 2px solid;
+}
+
+.category-attraksjoner .hentry:after {
+  border: hsla(282, 96%, 61%, 1.0) 2px solid;
+  bottom:-6px;
+}
