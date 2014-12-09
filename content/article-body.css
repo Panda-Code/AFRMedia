@@ -60,7 +60,8 @@ body.category-attraksjoner {
   box-shadow: 0 0 10px 0.5px;
 }
 
-.category-severdigheter .hentry {
+/* Changes to color in lines between articles*/
+.category-severdigheter .hentry, .category-severdigheter .site-head {
   border-bottom: hsla(142, 42%, 67%, 1.0) 2px solid;
 }
 
@@ -69,7 +70,13 @@ body.category-attraksjoner {
   bottom:-6px;
 }
 
-.category-kultur .hentry {
+.category-severdigheter .site-head:after {
+  border: hsla(142, 42%, 67%, 1.0) 2px solid;
+  bottom:-6px;
+  margin-left:-6px;
+}
+
+.category-kultur .hentry, .category-kultur .site-head {
   border-bottom: hsla(34, 100%, 50%, 1.0) 2px solid;
 }
 
@@ -78,7 +85,13 @@ body.category-attraksjoner {
   bottom:-6px;
 }
 
-.category-shopping .hentry {
+.category-kultur .site-head:after {
+  border: hsla(34, 100%, 50%, 1.0) 2px solid;
+  bottom:-6px;
+  margin-left:-6px;
+}
+
+.category-shopping .hentry, .category-shopping .site-head {
   border-bottom: hsla(0, 100%, 72%, 1.0) 2px solid;
 }
 
@@ -87,11 +100,23 @@ body.category-attraksjoner {
   bottom:-6px;
 }
 
-.category-attraksjoner .hentry {
+.category-shopping .site-head:after {
+  border: hsla(0, 100%, 72%, 1.0) 2px solid;
+  bottom:-6px;
+  margin-left:-6px;
+}
+
+.category-attraksjoner .hentry, .category-attraksjoner .site-head {
   border-bottom: hsla(282, 96%, 61%, 1.0) 2px solid;
 }
 
 .category-attraksjoner .hentry:after {
   border: hsla(282, 96%, 61%, 1.0) 2px solid;
   bottom:-6px;
+}
+
+.category-attraksjoner .site-head:after {
+  border: hsla(282, 96%, 61%, 1.0) 2px solid;
+  bottom:-6px;
+  margin-left:-6px;
 }
